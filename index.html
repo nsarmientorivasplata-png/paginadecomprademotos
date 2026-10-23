@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Motos</title>
+    <!-- Fuente Bebas Neue -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            
+            <nav class="navback">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="submenu">
+                <img src="images/car.svg" id="img-carrito" alt="Carrito">
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Se llena dinámicamente con JavaScript -->
+                        </tbody>
+                    </table>
+                    
+                    <!-- Total y Botones de Pago -->
+                    <div class="total-carrito">
+                        <p>Total: <span id="monto-total">$0</span></p>
+                    </div>
+
+                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                    <a href="#" id="pagar-carrito" class="btn-2 btn-pagar">Proceder al Pago</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Ofertas Especiales</h1>
+                <p>Estrena las mejores motos</p>
+                <a href="#" class="btn-1">Información</a>
+            </div>
+            <div class="header-img">
+                <img src="images/header.png" alt="Moto Principal">
+            </div>
+        </div>
+    </header>
+
+    <section class="about container">
+        <div class="about-img">
+            <img src="images/motor.png" alt="Nosotros">
+        </div>
+        <div class="about-txt">
+            <h2>Nosotros</h2>
+            <p>Somos los líderes en la distribución de motocicletas de alta gama y calidad premium. Nos apasiona la velocidad, el diseño y ofrecerte la mejor experiencia sobre dos ruedas junto a un servicio técnico especializado.</p>
+            <a href="#" class="btn-1">Información</a>
+        </div>
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+        <div class="product-content">
+            <!-- Producto 1 -->
+            <div class="product">
+                <img src="images/m1.png" alt="Moto 1">
+                <div class="product-txt">
+                    <h3>Motocicleta 1</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$1000,000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar</a>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="product">
+                <img src="images/m2.png" alt="Moto 2">
+                <div class="product-txt">
+                    <h3>Motocicleta 2</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$2500,000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar</a>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="product">
+                <img src="images/m3.png" alt="Moto 3">
+                <div class="product-txt">
+                    <h3>Motocicleta 3</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$3000,000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar</a>
+                </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="product">
+                <img src="images/m4.png" alt="Moto 4">
+                <div class="product-txt">
+                    <h3>Motocicleta 4</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$5000,000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar</a>
+                </div>
+            </div>
+            <!-- Producto 5 -->
+            <div class="product">
+                <img src="images/m5.png" alt="Moto 5">
+                <div class="product-txt">
+                    <h3>Motocicleta 5</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$6000,000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar</a>
+                </div>
+            </div>
+            <!-- Producto 6 -->
+            <div class="product">
+                <img src="images/m6.png" alt="Moto 6">
+                <div class="product-txt">
+                    <h3>Motocicleta 6</h3>
+                    <p>Calidad Premium</p>
+                    <p class="precio">$6500,000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links container">
+            <div class="link">
+                <h3>NUMERO DE CONTACTO</h3>
+                <P>917120223</P>
+            </div>
+        </div>
+
+        <!-- Zona de Métodos de Pago abajo en el Footer -->
+        <div class="zona-pago container">
+            <h3>Métodos de Pago Aceptados</h3>
+            <div class="metodos-pago">
+                <div class="metodo-card">
+                    <span>💳 Tarjeta de Crédito / Débito</span>
+                </div>
+                <div class="metodo-card">
+                    <span>🏦 Transferencia Bancaria</span>
+                </div>
+                <div class="metodo-card">
+                    <span>💵 Efectivo / Contraentrega</span>
+                </div>
+                <div class="metodo-card">
+                    <span>📱 Billetera Digital</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Formulario de Pago -->
+    <div id="modal-pago" class="modal">
+        <div class="modal-content">
+            <span class="cerrar-modal">&times;</span>
+            <h2>Pasarela de Pago</h2>
+            <form id="form-pago">
+                <label>Nombre Completo:</label>
+                <input type="text" placeholder="Juan Pérez" required>
+
+                <label>Correo Electrónico:</label>
+                <input type="email" placeholder="correo@ejemplo.com" required>
+
+                <label>Método de Pago:</label>
+                <select required>
+                    <option value="tarjeta">Tarjeta de Crédito / Débito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                    <option value="efectivo">Efectivo contra entrega</option>
+                </select>
+
+                <button type="submit" class="btn-1 btn-confirmar">Pagar Ahora</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Pago Exitoso -->
+    <div id="modal-exito" class="modal">
+        <div class="modal-content exito-content">
+            <div class="icono-exito">✔</div>
+            <h2>¡Pago Exitoso!</h2>
+            <p>Tu orden ha sido procesada correctamente.</p>
+            <button id="cerrar-exito" class="btn-1">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18171d;
+    color: #dfdfdf;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: linear-gradient(90deg, rgba(47,28,42,1) 0%, rgba(45,54,61,1) 50%, rgba(19,41,65,1) 100%);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ba8250;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.navback ul li {
+    float: left;
+}
+
+.navback ul li a {
+    font-size: 17px;
+    padding: 20px;
+    color: #dfdfdf;
+    text-transform: uppercase;
+    display: block;
+}
+
+.navback ul li a:hover {
+    color: #ba8250;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Submenu & Carrito */
+.submenu {
+    position: relative;
+}
+
+#img-carrito {
+    width: 35px;
+    cursor: pointer;
+}
+
+#carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 10;
+    background-color: #24232a;
+    border: 1px solid #ba8250;
+    padding: 20px;
+    min-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+table {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+th, td {
+    color: #dfdfdf;
+    text-align: center;
+    padding: 10px;
+}
+
+.borrar {
+    background-color: #ba8250;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.total-carrito {
+    text-align: right;
+    font-size: 18px;
+    font-weight: 800;
+    color: #ba8250;
+    margin-bottom: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-txt {
+    text-align: center;
+}
+
+.header-txt h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    color: #838586;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+
+.header-img img {
+    width: 700px;
+}
+
+/* Botones */
+.btn-1, .btn-2 {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #ba8250;
+    color: #18171d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn-2 {
+    padding: 8px 15px;
+    margin-right: 5px;
+}
+
+.btn-pagar {
+    background-color: #2ed573;
+    color: #fff;
+}
+
+/* About & Productos */
+.about {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-img {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.about-img img {
+    width: 350px;
+}
+
+.about-txt {
+    flex-basis: 50%;
+}
+
+h2 {
+    color: #838586;
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    color: #838586;
+}
+
+.products {
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 50px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.product {
+    background-color: #24232a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.product h3 {
+    color: #838586;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: #ba8250;
+    font-weight: 800;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* Footer y Zona de Pago */
+.footer {
+    border-top: 1px solid #ba8250;
+    padding: 50px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.link h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.link ul li a {
+    font-size: 16px;
+    color: #c0c0c0;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.link ul li a:hover {
+    color: #ba8250;
+}
+
+.zona-pago {
+    border-top: 1px rgba(186, 130, 80, 0.3) solid;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.zona-pago h3 {
+    color: #ba8250;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.metodos-pago {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.metodo-card {
+    background-color: #24232a;
+    border: 1px solid #ba8250;
+    padding: 15px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #dfdfdf;
+}
+
+/* Modales */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #24232a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ba8250;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.cerrar-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ba8250;
+}
+
+#form-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#form-pago input, #form-pago select {
+    padding: 10px;
+    background-color: #18171d;
+    border: 1px solid #32303a;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.exito-content {
+    text-align: center;
+}
+
+.icono-exito {
+    font-size: 50px;
+    color: #2ed573;
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .container { padding: 20px; }
+    .footer-links { flex-direction: column; text-align: center; }
+    .product-content { grid-template-columns: 1fr; }
+    .header-content, .about { flex-direction: column; text-align: center; }
+}
